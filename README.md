@@ -2,6 +2,17 @@
 
 A set of Windows batch file scripts that will change your display settings.
 
+## Table of Contents
+
+* [NOTE](#note)
+* [Purpose](#purpose)
+  * [Prerequisites](#prerequisites)
+  * [Installation](#installation)
+* [Usage](#usage)
+  * [Menu script](#menu-script)
+    * [Launch the menu at login](#launch-the-menu-at-login)
+  * [Individual scripts](#individual-scripts)
+
 ## NOTE
 
 These scripts are intended for dual display setups and will only work on Windows 10 and 11 systems.
