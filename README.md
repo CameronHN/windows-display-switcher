@@ -2,6 +2,17 @@
 
 A set of Windows batch file scripts that will change your display settings.
 
+## Table of Contents
+
+* [NOTE](#note)
+* [Purpose](#purpose)
+  * [Prerequisites](#prerequisites)
+  * [Installation](#installation)
+* [Usage](#usage)
+  * [Menu script](#menu-script)
+    * [Launch the menu at login](#launch-the-menu-at-login)
+  * [Individual scripts](#individual-scripts)
+
 ## NOTE
 
 These scripts are intended for dual display setups and will only work on Windows 10 and 11 systems.
@@ -40,6 +51,19 @@ Not sure which script you need? Double click `DisplayMenu.bat` and press a singl
 | `2` | Show only on display 2 |
 
 Any other key is ignored and the menu keeps waiting for a valid one. The script exits as soon as a mode is applied.
+
+#### Launch the menu at login
+
+You can set `DisplayMenu.bat` up to run automatically when you log in to your account using the Windows Task Scheduler. This lets you pick the display setting you want from the moment you log in.
+
+1. Open **Task Scheduler** from the Start menu.
+2. Select **Create Task...** in the right-hand Actions pane.
+3. On the **General** tab, give the task a name (for example, `Display Menu`).
+4. On the **Triggers** tab, select **New...**, set **Begin the task** to **At log on**, choose **Specific user** and select your account, then select **OK**.
+5. On the **Actions** tab, select **New...**, leave the action as **Start a program**, browse to `DisplayMenu.bat`, then select **OK**.
+6. Select **OK** to save the task.
+
+The menu will now appear each time you log in.
 
 ### Individual scripts
 
